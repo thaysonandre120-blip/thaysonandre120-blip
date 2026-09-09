@@ -1,16 +1,17 @@
-## Hi there 👋
+# Thayson Santos
 
-<!--
-**thaysonandre120-blip/thaysonandre120-blip** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Estudante de Análise e Desenvolvimento de Sistemas na Univali e Analista Logístico na Sanco Operador Logístico.
 
-Here are some ideas to get you started:
+## Tecnologias
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Python • SQL • Power BI • HTML • CSS • JavaScript
+
+## Sobre
+
+Este perfil reúne projetos, exercícios e atividades desenvolvidos durante meus estudos e evolução na área de tecnologia.
+
+## Contato
+
+LinkedIn: linkedin.com/in/thayson-andré-2830791b8
+
+E-mail: thaysonandre120@gmail.com
