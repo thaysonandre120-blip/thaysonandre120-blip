@@ -4,7 +4,10 @@ Estudante de Análise e Desenvolvimento de Sistemas na Univali e Analista Logís
 
 ## Tecnologias
 
-Python • SQL • Power BI • HTML • CSS • JavaScript
+<h2>skills</h2>
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,py,ts,js,react,angular,tailwind,nextjs,vue,vite,nodejs,postgres,mongodb,redis,supabase,firebase,docker,linux,git,npm,gcp,cloudflare" />
+</p>
 
 ## Sobre
 
