@@ -1,12 +1,12 @@
 
-
-<p align="center">
+<div align="center">
   <img
-    src="./data_analista_banner.svg"
+    src="./assets/banner-thayson-animado.gif"
+    alt="Thayson Santos | Analista de Dados"
     width="100%"
-    alt="Thayson Santos — Analista de Dados"
   />
-</p>
+</div>
+
 
 
 <p align="center">
