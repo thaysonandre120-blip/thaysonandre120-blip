@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260" fill="none">
+  <defs>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="4" y="4" width="792" height="252" rx="18" fill="#0b0f19"/>
+  <rect x="4" y="4" width="792" height="252" rx="18" stroke="#ff073a" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="4" y="4" width="792" height="252" rx="18" pathLength="100"
+        stroke="#ff073a" stroke-width="3" stroke-linecap="round"
+        stroke-dasharray="10 40" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="400" y="58" text-anchor="middle" fill="#ff073a" font-size="22" font-weight="700"
+        letter-spacing="6" font-family="'Courier New', Consolas, monospace"
+        filter="url(#glow)">TECNOLOGIAS</text>
+
+  <g fill="#111827" stroke="#ff073a" stroke-opacity="0.45" stroke-width="1.5">
+    <rect x="50" y="90" width="160" height="56" rx="10"/>
+    <rect x="230" y="90" width="160" height="56" rx="10"/>
+    <rect x="410" y="90" width="160" height="56" rx="10"/>
+    <rect x="590" y="90" width="160" height="56" rx="10"/>
+    <rect x="50" y="166" width="160" height="56" rx="10"/>
+    <rect x="230" y="166" width="160" height="56" rx="10"/>
+    <rect x="410" y="166" width="160" height="56" rx="10"/>
+    <rect x="590" y="166" width="160" height="56" rx="10"/>
+  </g>
+
+  <g fill="#e6edf3" font-size="18" font-weight="700" letter-spacing="2"
+     text-anchor="middle" font-family="'Courier New', Consolas, monospace">
+    <text x="130" y="124">SQL</text>
+    <text x="310" y="124">GITHUB</text>
+    <text x="490" y="124">PYTHON</text>
+    <text x="670" y="124">JAVASCRIPT</text>
+    <text x="130" y="200">C</text>
+    <text x="310" y="200">C++</text>
+    <text x="490" y="200">SUPABASE</text>
+    <text x="670" y="200">VERCEL</text>
+  </g>
+</svg>
