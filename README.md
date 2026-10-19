@@ -2,7 +2,7 @@
 
 Estudante de Análise e Desenvolvimento de Sistemas na Univali e Analista Logístico na Sanco Operador Logístico.
 
-## Tecnologias
+## TECNLOGIAS
 <h2 align="center">skills</h2>
 <p align="center">
   <img src="./neon.svg" width="60%" />
