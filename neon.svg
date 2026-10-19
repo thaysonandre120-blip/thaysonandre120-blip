@@ -17,3 +17,12 @@
              dur="2s" repeatCount="indefinite"/>
   </rect>
 </svg>
+
+<h2 align="center">skills</h2>
+<p align="center">
+  <img src="./neon.svg" width="60%" />
+  <br><br>
+  <img src="https://skillicons.dev/icons?i=postgres,github,py,js,c,cpp,supabase,vercel&perline=4" />
+  <br><br>
+  <img src="./neon.svg" width="60%" />
+</p>
