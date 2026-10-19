@@ -12,6 +12,6 @@ Este perfil reúne projetos, exercícios e atividades desenvolvidos durante meus
 
 ## Contato
 E-mail: thaysonandre120@gmail.com
-LinkedIn: linkedin.com/in/thayson-andré-2830791b8
+
 
 
