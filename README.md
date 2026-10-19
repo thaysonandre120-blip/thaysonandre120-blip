@@ -12,7 +12,7 @@ Estudante de Análise e Desenvolvimento de Sistemas na Univali e Analista Logís
   <img src="./neon.svg" width="60%" />
 </p>
 
-Este perfil reúne projetos, exercícios e atividades desenvolvidos durante meus estudos e evolução.
+<p align="center">ESTE PERFIL REÚNE PROJETOS, EXERCÍCIOS E ATIVIDADES DESENVOLVIDOS DURANTE MEUS ESTUDOS E EVOLUÇÃO.</p>
 
 ## Contato
 E-mail: thaysonandre120@gmail.com
