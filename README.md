@@ -1,7 +1,7 @@
 
 <div align="center">
   <img
-    src="./assets/banner-thayson-animado.gif"
+    src="./banner-thayson-animado.gif"
     alt="Thayson Santos | Analista de Dados"
     width="100%"
   />
