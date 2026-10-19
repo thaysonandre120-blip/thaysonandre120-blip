@@ -1,8 +1,11 @@
 
+
 <p align="center">
-  <img src="./data_engineer_banner.svg"
-       width="100%"
-       alt="Thayson Santos — Data Engineer" />
+  <img
+    src="./data_analista_banner.svg"
+    width="100%"
+    alt="Thayson Santos — Analista de Dados"
+  />
 </p>
 
 
