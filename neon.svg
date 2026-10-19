@@ -8,13 +8,9 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="10" y="2" width="580" height="4" rx="2" fill="#00f0ff" filter="url(#glow)">
-    <animate attributeName="fill"
-             values="#00f0ff;#ff00ff;#39ff14;#00f0ff"
-             dur="6s" repeatCount="indefinite"/>
+  <rect x="10" y="2" width="580" height="4" rx="2" fill="#ff073a" filter="url(#glow)">
     <animate attributeName="opacity"
              values="1;0.55;1"
              dur="2s" repeatCount="indefinite"/>
   </rect>
 </svg>
-
