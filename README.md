@@ -6,7 +6,7 @@ Estudante de Análise e Desenvolvimento de Sistemas na Univali e Analista Logís
 
 <h2>skills</h2>
 <p>
-  <img src="https://skillicons.dev/icons?i=excel,sql,py,js,c,cpp,supabase,vercel,make,claude,gemini,antigravity&perline=4" />
+  <img src="https://skillicons.dev/icons?i=postgres,github,py,js,c,cpp,supabase,vercel&perline=4" />
 </p>
 ## Sobre
 
