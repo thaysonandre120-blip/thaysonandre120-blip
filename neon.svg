@@ -1,16 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="8" viewBox="0 0 600 8">
-  <defs>
-    <filter id="glow" x="-20%" y="-300%" width="140%" height="700%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <rect x="10" y="2" width="580" height="4" rx="2" fill="#ff073a" filter="url(#glow)">
-    <animate attributeName="opacity"
-             values="1;0.55;1"
-             dur="2s" repeatCount="indefinite"/>
-  </rect>
-</svg>
+import base64
+import urllib.request
+
+# (nome do icone no skillicons.dev, texto que aparece no quadro)
+ITENS = [
+    ("postgres", "SQL"),
+    ("github", "GITHUB"),
+    ("py", "PYTHON"),
+    ("js", "JAVASCRIPT"),
+    ("c", "C"),
+    ("cpp", "C++"),
+    ("supabase", "SUPABASE"),
+    ("vercel", "VERCEL"),
+]
+
+COR = "#ff073a"      # cor da borda e do titulo
+TITULO = "TECNOLOGIAS"
+ARQUIVO = "skills.svg"
+
+
+def icone_b64(nome):
+    url = f"https://skillicons.dev/icons?i={nome}"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return base64.b64encode(r.read()).decode()
+
+
+def main():
+    cab = (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" '
+        'viewBox="0 0 800 260" fill="none">\n'
+        '<defs><filter id="glow" x="-10%" y="-10%" width="120%" height="120%">'
+        '<feGaussianBlur stdDeviation="3" result="b"/>'
+        '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>'
+        '</filter></defs>\n'
+        '<rect x="4" y="4" width="792" height="252" rx="18" fill="#0b0f19"/>\n'
+        f'<rect x="4" y="4" width="792" height="252" rx="18" stroke="{COR}" '
+        'stroke-opacity="0.25" stroke-width="2"/>\n'
+        f'<rect x="4" y="4" width="792" height="252" rx="18" pathLength="100" '
+        f'stroke="{COR}" stroke-width="3" stroke-linecap="round" '
+        'stroke-dasharray="10 40" filter="url(#glow)">'
+        '<animate attributeName="stroke-dashoffset" from="0" to="-100" '
+        'dur="6s" repeatCount="indefinite"/></rect>\n'
+        f'<text x="400" y="58" text-anchor="middle" fill="{COR}" font-size="22" '
+        'font-weight="700" letter-spacing="6" '
+        'font-family="\'Courier New\', Consolas, monospace" filter="url(#glow)">'
+        f'{TITULO}</text>\n'
+    )
+
+    partes = [cab]
+    larg, gap, x0 = 170, 20, 30
+    for i, (nome, rotulo) in enumerate(ITENS):
+        col, lin = i % 4, i // 4
+        x = x0 + col * (larg + gap)
+        y = 90 + lin * 76
+        img = icone_b64(nome)
+        partes.append(
+            f'<rect x="{x}" y="{y}" width="{larg}" height="56" rx="10" '
+            f'fill="#111827" stroke="{COR}" stroke-opacity="0.45" stroke-width="1.5"/>\n'
+            f'<image x="{x + 12}" y="{y + 8}" width="40" height="40" '
+            f'href="data:image/svg+xml;base64,{img}"/>\n'
+            f'<text x="{x + 64}" y="{y + 34}" fill="#e6edf3" font-size="14" '
+            'font-weight="700" letter-spacing="1" '
+            'font-family="\'Courier New\', Consolas, monospace">'
+            f'{rotulo}</text>\n'
+        )
+    partes.append("</svg>\n")
+
+    with open(ARQUIVO, "w", encoding="utf-8") as f:
+        f.write("".join(partes))
+    print(f"Pronto: {ARQUIVO} gerado.")
+
+
+if __name__ == "__main__":
+    main()
